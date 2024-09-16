@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random anime</title>
+</head>
+<body>
+    <h1>Random anime title</h1>
+<h2>Reload and get random anime</h2>
+<div class="anime-card">
+    <% if(locals.dani) {%>
+        <img src="<%=dani.attributes.posterImage.small  %>" alt="anime poster image">
+        <h3>Titles:</h3>
+        <ul>
+            <li>Japanese: <span><%= dani.attributes.titles.ja_jp  %></span></li>
+            <li>English: <span><%= dani.attributes.canonicalTitle%></span></li>
+        </ul>
+        <h3>Type: <span><%= dani.attributes.showType  %></span></h3>
+        <h3>Episodes: <span><%= dani.attributes.episodeCount  %></span></h3>
+        <h3>Rating: <span><%= dani.attributes.averageRating  %></span></h3>
+
+        <h3>Age rating: <span><%= dani.attributes.ageRating  %>, <%= dani.attributes.ageRatingGuide %></span></h3>
+        <h3>Status: <span><%= dani.attributes.status %></span></h3>
+        <h3>Period: <span><%= dani.attributes.startDate %> : <%= dani.attributes.endDate %> </span></h3>
+        <h3>Synopsus: <span><%= dani.attributes.synopsis %></span></h3>
+        <% } else { %>
+            <h3>404, try again</h3>
+    <% } %>
+</div>
+</body>
+</html>
+
