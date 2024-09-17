@@ -52,6 +52,11 @@ span{
     line-height: 1.5;
 }
 
+.error{
+    font-size: 4rem;
+    margin-bottom: 300px;
+}
+
 footer{
     height: 250px;
     background-color: #3489f0;

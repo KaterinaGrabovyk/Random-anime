@@ -7,10 +7,10 @@ const app=express();
 app.use(express.static("public"));
 
 app.get("/",async(req,res)=>{
-    let random=Math.floor(Math.random()*10056)+1;
+    let random=Math.floor(Math.random()*10056)+1;    
+    console.log(`anime id: ${random}`)
     try {
         const response = await axios.get("https://kitsu.io/api/edge/anime/"+random);
-        console.log(`anime id: ${random}`)
         const result = response.data;
         res.render("index.ejs", { dani: result.data});
       } catch (error) {
