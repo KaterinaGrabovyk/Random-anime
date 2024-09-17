@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #60A5FA;
+    font-family: "Fredoka", sans-serif;
+    color: #D1FAE5;
+}
+h1, h2{
+    text-align: center;
+}
+h1{
+    font-size: 5rem;
+}
+h2{
+    font-size: 3rem;
+}
+.anime-card{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+img{
+    width: 500px;
+    border: 2px dotted black;
+}
+.content{
+    background-color: #F472B6;
+    padding: 30px;
+    width: 700px;
+}
+h3{
+font-size: 2rem;
+}
+.titles{
+    display: flex;
+}
+ul{
+    margin-top: 40px;
+    font-size: 1.5rem;
+    list-style: none;
+}
+li{
+    font-weight: 600;
+}
+span{
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.5rem;
+}
+.text{
+    line-height: 1.5;
+}
+
+footer{
+    height: 250px;
+    background-color: #3489f0;
+    font-size: 3rem;
+}
+footer span{
+    font-family: "Fredoka", sans-serif;
+}
+footer svg{
+    fill: #D1FAE5;
+    height:50px;
+    width: 50px;
+    margin-left: 10px;
+    }
+footer svg:hover{
+scale: 1.2;
+background-color: white;
+border-radius: 50%;
+}
+ .bi-github:hover{
+    fill: #181717;
+
+}
+.bi-telegram:hover{
+    fill: #26A5E4;
+}
+.bi-telegram::after,.bi-github::after{
+    fill: rgb(255, 215, 196);
+}

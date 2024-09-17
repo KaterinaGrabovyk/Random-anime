@@ -4,6 +4,8 @@ import axios from "axios"
 const port=3000;
 const app=express();
 
+app.use(express.static("public"));
+
 app.get("/",async(req,res)=>{
     let random=Math.floor(Math.random()*10056)+1;
     try {
